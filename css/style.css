@@ -289,10 +289,7 @@ main {
   flex-direction: column;
   background: #f7f7f7;
 }
-.Les-restaurents .coeur a {
-  text-decoration: none;
-  list-style: none;
-}
+
 .Les-restaurents article {
   margin-bottom: 20px;
 }
