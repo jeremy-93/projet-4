@@ -21,6 +21,17 @@ main {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
+.container {
+  background-color: white;
+  width: 100%;
+  height: 1360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+}
 
 @keyframes loader {
   0% {
@@ -32,18 +43,6 @@ main {
     opacity: 0;
     z-index: -1;
   }
-}
-
-.container {
-  background-color: white;
-  width: 100%;
-  height: 1360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  z-index: 5;
 }
 
 .loader {
@@ -100,9 +99,21 @@ main {
 
 /* HEADER */
 
+.header-menu {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
 .flèche a i {
   display: none;
 }
+
 .header-menu h1 {
   margin: 0;
   font-family: Shrikhand;
@@ -117,16 +128,6 @@ main {
   top: 10px;
 }
 
-.header-menu {
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  position: relative;
-  z-index: 1;
-}
 /* FIN HEADER  */
 
 /* BARRE DE RECHERCHE */
@@ -249,6 +250,7 @@ main {
   background-color: #f7f7f7;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  cursor: pointer;
 }
 .fonctionnement .numéro {
   color: #ffffff;
@@ -269,7 +271,7 @@ main {
 .icon-gris {
   color: #7e7e7e;
 }
-.icon-gris:hover {
+.fonctionnement-liens:hover .icon-gris {
   color: #9356dc;
   cursor: pointer;
 }
@@ -287,6 +289,10 @@ main {
   flex-direction: column;
   background: #f7f7f7;
 }
+.Les-restaurents .coeur a {
+  text-decoration: none;
+  list-style: none;
+}
 .Les-restaurents article {
   margin-bottom: 20px;
 }
@@ -299,6 +305,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: white;
+  color: black;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -371,7 +378,6 @@ main {
 /* PAGE DES MENUS */
 
 .image-principal-menu1 {
-  position: relative;
   width: 100%;
   height: 270px;
   object-fit: cover;
@@ -409,9 +415,11 @@ main {
   background: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
 }
+/* menu3 */
 .hauteur-bloc {
   height: 1542px;
 }
+
 .hauteur-bloc .menu-restaurant {
   height: 1310px;
 }
